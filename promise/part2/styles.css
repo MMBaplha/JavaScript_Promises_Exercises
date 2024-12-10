@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1b580e;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #faf9f9;
+}
+
+#draw-card-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #057af7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#draw-card-btn:hover {
+    background-color: #0056b3;
+}
+
+#draw-card-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#card-container {
+    position: relative;
+    width: 200px;
+    margin: 20px auto;
+}
+
+/* Cards stack adove each other */
+.card {
+    position: absolute;
+    top: 10px;
+    left: 10px; 
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+} 
